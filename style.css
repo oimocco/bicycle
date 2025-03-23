@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  color: #383E45;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 32px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  padding: 16px;
+}
+
+h1 img {
+  width: 120px;
+  height: 40px;
+  padding: 0 16px;
+}
+
+.nav li:hover {
+  opacity: .7;
+}
+
+/* メインビジュアル */
+.mainvisual {
+  width: 100%;
+}
+
+/* aboutエリア */
+.about {
+  display: flex;
+  flex-direction: column;
+  /*Flexアイテムを縦方向（上から下）に並べます。*/
+  justify-content: center;
+  /* Flexコンテナ内で、Flexアイテムを主軸（この場合は縦方向）に沿って中央揃え */
+  align-items: center;
+  /*Flexアイテムを交差軸（この場合は横方向）に沿って中央揃えします。*/
+}
+
+.about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.about p {
+  width: 450px;
+}
+
+/* bicycleエリア */
+.bicycle h2 {
+  text-align: center;
+}
+
+.bicycle ul {
+  display: flex;
+  flex-direction: column;
+  /*Flexアイテムを縦方向（上から下）に並べます。*/
+  justify-content: center;
+  /* Flexコンテナ内で、Flexアイテムを主軸（この場合は縦方向）に沿って中央揃え */
+  align-items: center;
+  /*Flexアイテムを交差軸（この場合は横方向）に沿って中央揃えします。*/
+}
+
+.bicycle li {
+  text-align: center;
+}
+
+.bicycle img {
+  display: block;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/*  フッターエリア */
+footer {
+  text-align: center;
+  font-size: 8px;
+  padding: 8px;
+}
+
+/* PCサイトコーディング*/
+@media (min-width:600px) {
+
+  .about_block{
+    display: flex;
+    flex-direction: row;
+  } 
+  .bicycle ul {
+    flex-direction: row;
+  }
+}
